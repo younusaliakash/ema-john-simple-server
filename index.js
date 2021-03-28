@@ -67,6 +67,4 @@ client.connect(err => {
 });
 
 
-app.listen(port, () => {
-  console.log("ema john server is running")
-})
+app.listen(process.env.PORT || port)
